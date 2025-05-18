@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 export async function middleware(request) {
   const token =
-    'eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImR1bW15QGV4YW1wbGUuanAiLCJleHAiOjE3NDcwMzU1MzJ9.QuvXTNme3MQGh7TE9GqZgNn2oWf7GJenqN3dskpw3Ww';
+    'eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImR1bW15QGV4YW1wbGUuanAiLCJleHAiOjE3NDcyMDk0ODh9.TozzSbjebRh3Q36LmgJ0Sp_fWwbqEcxMMSXJ2YELu7Y';
   //   const token = await request.headers.get('Authorization')?.split(' ')[1];
   if (!token) {
     return NextResponse.json({ message: 'トークンがありません' });
